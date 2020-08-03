@@ -1,0 +1,39 @@
+@import "_variables.sass"
+    
+.my-button--root
+    display: inline-block
+    border: none
+    outline: none
+    background: transparent
+    padding: 0
+    margin: 0
+    cursor: pointer
+    -webkit-appearance: none
+    -moz-appearance: none
+
+.my-button--width-fluid
+    width: 100%
+    
+.my-button--variant-first
+    padding: $base-step * 4
+    border-radius: $base-step * 4
+    background: $first-color-light
+    color: $typo-color-light
+    text-transform: uppercase
+    font-weight: 700
+    font-size: $base-step * 4
+    line-height: 1.25
+    letter-spacing: $base-step / 2
+
+.my-button--variant-first:hover, .my-button--variant-first:focus
+     background: $first-color-dark
+
+.my-button--variant-first:active
+    transform: scale(0.99)
+
+.my-button--variant-first:disabled
+    background: #000
+
+.my-button--variant-second
+    background: $second-color-dark
+    color: $typo-color-light
